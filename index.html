@@ -12,9 +12,12 @@
     <!-- The description tag is used by search engines -->
 		<meta name="description" content="This is what my page is about">
     <!-- STYLESHEETS Your main 'style.css' should typically be last -->
-		
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
 		<!-- other stylesheets, e.g. Google fonts -->
 		<!-- your stylesheet -->
+		<link href="css/style.css" rel="stylesheet">
 		<!-- CRITICAL JAVASCRIPT non critical scripts should be at the end of the 
       body-->
 		<!-- <script src="js/critical-scripts.js" type="text/javascript"></script> -->
@@ -22,26 +25,219 @@
 <!-- ------------------------------ BODY ----------------------------------- -->	
 	<body>
 		<!-- the placement of <header>, <main> and <footer> blocks is only a guide for "typical" websites -->
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+	<div class="container">
+		<a class="navbar-brand js-scroll-trigger" href="#page-top">Start Bootstrap</a><button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">Menu<i class="fas fa-bars"></i></button>
+		<div class="collapse navbar-collapse" id="navbarResponsive">
+			<ul class="navbar-nav ml-auto">
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#about">ABOUT US</a></li>
+				<!-- Dropdown -->
+				<li class="nav-item dropdown">
+					<a href="#" class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown"
+						aria-haspopup="true" aria-expanded="false">OUR WORK</a>
+						<div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+							<a class="dropdown-item" href="#">NEWS</a>
+							<a class="dropdown-item" href="#">BLOG</a>
+							<a class="dropdown-item" href="#">PRESS</a>
+							<a class="dropdown-item" href="#">UPDATES</a>
+							<a class="dropdown-item" href="#">OUR IMPACT</a>
+						</div>
+				</li>
+				<!-- END Dropdown -->
+				<li class="nav-item"><a class="nav-link js-scroll-trigger" href="#signup">GET INVOLVED</a></li>
+				<button class="btn btn btn-outline-secondary" type="button">DONATE</button>
+			</ul>
+		</div>
+	</div>
+</nav>
+<!-- END Navigation-->
 
-		
-		<main>
-			<div>
-				<h1>My first day in DES221</h1>
-				<h2>I added No adjective with my name to the rest of the class for icebreaker activity</h2>
-				<p>PUT ONE PARAGRAPH OF YOUR EXPERIENCE</p>
-				<ul>
-					<li>Make a website</li>
-					<li>Target photographers</li>
-					<li></li>
-				</ul>
+ <!-- Header-->
+ <header>
+	<div class="overlay"></div>
+	<video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+	  <source src="img/movie.mp4" type="video/mp4">
+	</video>
+	<div class="container h-100">
+	  <div class="d-flex h-100 text-center align-items-center">
+		<div class="w-100 text-white">
+		  <h1 class="display-3">THE LUNGS OF OUR PLANET</h1>
+		  <p class="lead mb-0">PUT A STOP TO THE EXPLOITATION OF THE AMAZON RAINFOREST</p>
+		  <button class="btn btn btn-outline-secondary" type="button">TAKE ACTION</button>
+		</div>
+	  </div>
+	</div>
+  </header>
+  <!-- END Header-->
 
+
+  <!-- About -->
+  <section class="about">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 mx-auto">
+			<h2>AMAZON <strong>•</strong> FOREVER</h2>
+		  	<p>A global nonprofit organisation that creates awareness around the issues of deforestation in the Amazon Rainforest.</p>
+			<p>Amazon Forever are working to conserve the biodiversity of the Amazon basin through the development of new scientific understanding, sustainable resource management and rational land-use policy.</p>
+			<button class="btn btn btn-outline-secondary" type="button">DONATE</button>
+		</div>
+	  </div>
+	</div>
+  </section>
+<!-- END About -->
+
+
+<!-- Flippy Facts -->
+<div class="container">
+<div class="row">
+<div class="column">
+<div class="flip-card">
+	<div class="flip-card-inner">
+	  <div class="flip-card-front">
+		<img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+	  </div>
+	  <div class="flip-card-back">
+		<h1>John Doe</h1>
+		<p>Architect & Engineer</p>
+		<p>We love that guy</p>
+	  </div>
+	</div>
+  </div>
+</div>
+
+<div class="column">
+  <div class="flip-card">
+	<div class="flip-card-inner">
+	  <div class="flip-card-front">
+		<img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+	  </div>
+	  <div class="flip-card-back">
+		<h1>John Doe</h1>
+		<p>Architect & Engineer</p>
+		<p>We love that guy</p>
+	  </div>
+	</div>
+</div>
+</div>
+
+<div class="column">
+  </div><div class="flip-card">
+	<div class="flip-card-inner">
+	  <div class="flip-card-front">
+		<img src="img_avatar.png" alt="Avatar" style="width:300px;height:300px;">
+	  </div>
+	  <div class="flip-card-back">
+		<h1>John Doe</h1>
+		<p>Architect & Engineer</p>
+		<p>We love that guy</p>
+	  </div>
+	</div>
+</div>
+</div>
+</div>
+</div>
+<!-- END Flippy Facts -->
+
+<!-- What we believe -->
+<section class="believe">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 mx-auto">
+			<h2>A CONSERVATION CHARITY THAT WORKS</h2>
+		  	<p>Protection requires swift action, and we implement scientifically-based conservation plans that are not only timely, but also resilient and sustainable. With your support, we work tirelessly to permanently protect rainforests and other vital habitat throughout the world.</p>
+		</div>
+	  </div>
+	</div>
+  </section>
+<!-- END What we believe -->
+
+<!-- Positive News -->
+<section class="positive">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 mx-auto">
+			<h2>THIS IS WHAT CHANGE LOOKS LIKE</h2>
+		  	<p>Last year we saved 1.09 million acres of rainforest, around 1 acre every 16 seconds. We launched our new Fellows and Guardians Programme to support our on the ground conservationists and we've grown from a small non-profit to an internationally recognised organisation allowing us to expand the scoop of our conservation.</p>
+			<p>Without your continued support this wouldn’t have been possible, so from all of us at Amazon Forever, we thank you.</p>
 				
+			<button class="btn btn btn-outline-secondary" type="button">TAKE ACTION</button>
+		</div>
+	  </div>
+	</div>
+  </section>
+  <!-- Map -->
+  <div class="container">
+	<div class="row">
+		<div class="col-md-8 mx-auto">
+			<h2>WHERE WE WORK</h2>
 			</div>
-		</main>
+			</div>
+	<div class="row">
+		<div class="col-md-6 mx-auto"><ul>
+			<li>Brasil</li>
+			<li>Guyana</li>
+			<li>Ecuador</li>
+			<li>Peru</li>
+			<li>Bolivia</li>
+			</ul>
+		</div> 
+		<div class="col-md-6 mx-auto"><img class="map_img" src="img/map-01.jpg"></div>
+		</div>
+		</div>
+  <!-- END Map -->
+
+ <!-- Call to Action -->
+  <section class="cta">
+	<div class="container">
+	  <div class="row">
+		<div class="col-md-8 mx-auto">
+			<h2>HELP US MAKE A DIFFERENCE</h2>
+			<p>Your support can help us put a stop to the destruction of the Amazon Rainforest, make this crisis a thing of the past, for everyone forever.</p>
+			<button class="btn btn btn-outline-secondary" type="button">DONATE</button>
+		</div>
+	  </div>
+	</div>
+  </section>
+<!-- END Call to Action -->
 
 
-		<!-- this is where non-load-critical javascript should be placed i.e. the document can sill load properly with out it -->
-		<!--		<script src="js/scripts.js" type="text/javascript"></script>-->
-	</body>
-	
+	<!-- Footer -->
+		<footer id="footer">
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+					<div class="col-lg-3 col-md-6 footer-info">
+						<h3>Amazon Forever</h3>
+						<p>Email:</p> support@amazonforever.com<br>
+						<div class="social-links mt-3">
+						<a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+						<a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+						<a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+						<a href="#" class="youtube"><i class="bx bxl-youtube"></i></a>
+						</div>
+					</div>
+
+					<div class="col-lg-2 col-md-6 footer-links">
+						<ul>
+						<li><i class="bx bx-chevron-right"></i> <a href="#">HOME</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="#">ABOUT US</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="#">OUR WORK</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="#">GET INVOLVED</a></li>
+						<li><i class="bx bx-chevron-right"></i> <a href="#">DONATE</a></li>
+						</ul>
+					</div>
+
+					<div class="col-lg-4 col-md-6 footer-newsletter">
+						<h4>Newsletter</h4>
+						<p>Share the journey with us</p>
+						<form action="" method="post">
+						<input type="email" name="email"><input type="submit" value="Subscribe">
+						</form>
+					</div>
+				</div>
+			</div>
+		</div> 
+	</footer>
+</body>
 </html>
