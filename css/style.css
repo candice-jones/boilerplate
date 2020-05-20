@@ -1,4 +1,10 @@
  /* GENERAL */
+
+ !* {
+    box-sizing: border-box; 
+    }
+
+    
  body
 { font-family: 'Poppins', sans-serif;
 }
@@ -206,3 +212,130 @@ section.about {
     padding:1.8rem;
 
 }
+
+ /* BELIEVE */
+
+section.believe {
+   margin:5rem 0rem 5rem 0rem;
+}
+   
+.believe h2{
+   margin:1rem 0rem 2rem 0rem;
+}
+
+
+ /* POSTITIVE */
+
+ section.positive {
+    margin:5rem 0rem 5rem 0rem;
+    padding:5rem 0rem 5rem 0rem;
+    height: 100%;
+    background-image: url(../img/change_bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: left;
+ }
+    
+ .positive h2{
+    margin:1rem 0rem 2rem 0rem;
+    color:#ffffff;
+ }
+h2.h2p{
+    text-align: left;
+
+}
+ div.left-positive {
+    text-align: left;
+
+ }
+ .positive p{
+    color:#ffffff;
+ }
+
+ button.h2.btn.btn.btn-outline-secondary{
+     margin-left: 0;
+ }
+
+  /* MAP */
+section.map ul {
+    display: table;
+    margin: 0 auto;
+    position: relative;                   
+    top: 50%;                            
+    transform: translateY(-50%);         
+  }
+
+  section.map li{
+      list-style: none;
+      font-size: x-large;
+      padding-top: 3rem;
+      color: black;
+  }
+  
+
+  section.map a:hover{
+    color:  #748e00; 
+    text-decoration: none;
+}
+
+section.map a {
+    color:black; 
+    text-decoration: none;
+}
+  img.map_img{
+      max-width: 100%;
+      padding-top: 3rem;
+
+  }
+
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+.grow:hover { 
+    transform: scale(1.2); 
+    }
+
+ /*CTA */
+
+
+section.cta {
+   margin:5rem 0rem 5rem 0rem;
+}
+   
+.cta h2{
+   margin:1rem 0rem 2rem 0rem;
+}
+
+.col-md-8.mx-auto {
+    text-align: center;
+}
+
+  /* FOOTER */
+
+.footer {
+    margin:5rem 0rem 5rem 0rem;
+    padding:5rem 0rem 5rem 0rem;
+}
+
+    section.footer {
+        color: white;
+        background-color: #263533;
+    }
+
+    section.footer li{
+        list-style: none;
+        color: #ffffff;
+    }
+
+    section.footer a:hover{
+        color:  #748e00; 
+        text-decoration: none;
+    }
+    section.footer a{
+        color: #ffffff; 
+            }
+
+    input[type="submit"] {
+                color: #fffff;
+            }
